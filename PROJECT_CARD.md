@@ -74,38 +74,79 @@ The complex sampling design and appropriate survey weights will be considered du
 
 The variables are initially divided into four groups.
 
-### A. Physical Activity Variables
+## 1. Response Variables (Quantitative)
 
-| Variable | Description | Measurement Scale |
-|---|---|---|
-| PAD790Q | Frequency of moderate-intensity leisure-time physical activity | Discrete quantitative |
-| PAD790U | Unit of frequency | Categorical |
-| Other relevant PAQ variables | Frequency and duration of physical activities | Quantitative / Categorical |
-
-### B. Smoking Variables
-
-| Variable | Description | Measurement Scale |
-|---|---|---|
-| SMQ020 | Whether the participant has smoked at least 100 cigarettes in their lifetime | Binary categorical |
-| SMQ040 | Current smoking frequency among eligible participants | Categorical |
-| Other relevant SMQ variables | Additional smoking-related information | Categorical / Quantitative |
-
-### C. General Health Indicators
-
-| Variable | Description | Measurement Scale |
+| Variable Name | Variable Description | Measurement Scale |
 |---|---|---|
 | BMXBMI | Body Mass Index (kg/m²) | Continuous quantitative |
-| BPXOSY1, BPXOSY2, etc. | Systolic blood pressure readings | Continuous quantitative |
-| BPXODI1, BPXODI2, etc. | Diastolic blood pressure readings | Continuous quantitative |
-| LBDHDD | HDL cholesterol (mg/dL) | Continuous quantitative |
+| BPXODI1 | Diastolic - 1st oscillometric reading | Continuous quantitative |
+| BPXODI2 | Diastolic - 2nd oscillometric reading | Continuous quantitative |
+| BPXODI3 | Diastolic - 3rd oscillometric reading | Continuous quantitative |
+| BPXOSY1 | Systolic - 1st oscillometric reading | Continuous quantitative |
+| BPXOSY2 | Systolic - 2nd oscillometric reading | Continuous quantitative |
+| BPXOSY3 | Systolic - 3rd oscillometric reading | Continuous quantitative |
+| LBXGH | Glycohemoglobin (%) | Continuous quantitative |
+| LBXGLU | Fasting Glucose (mg/dL) | Continuous quantitative |
+| LBDHDD | Direct HDL-Cholesterol (mg/dL) | Continuous quantitative |
+| LBXTC | Total Cholesterol (mg/dL) | Continuous quantitative |
+| LBXTLG | Triglyceride (mg/dL) | Continuous quantitative |
 
-### D. Demographic Variables
+## 2. Primary Explanatory Variables
 
-| Variable | Description | Measurement Scale |
+### Physical Activity
+
+| Variable Name | Variable Description | Measurement Scale |
 |---|---|---|
-| RIDAGEYR | Age in years | Quantitative |
-| RIAGENDR | Gender | Categorical |
+| PAD790Q | How often does the participant engage in moderate-intensity leisure-time physical activities? | Discrete quantitative |
+| PAD790U | Unit of frequency for moderate-intensity leisure-time physical activities | Nominal categorical |
+| PAD800 | Duration of moderate-intensity leisure-time physical activities per session | Discrete quantitative |
+| PAD810Q | How often does the participant engage in vigorous-intensity leisure-time physical activities? | Discrete quantitative |
+| PAD810U | Unit of frequency for vigorous-intensity leisure-time physical activities | Nominal categorical |
+| PAD820 | Duration of vigorous-intensity leisure-time physical activities per session | Discrete quantitative |
 
+### Smoking
+
+| Variable Name | Variable Description | Measurement Scale |
+|---|---|---|
+| SMD630 | Age at which the participant first smoked a whole cigarette | Discrete quantitative |
+| SMD650 | Number of cigarettes smoked per day on smoking days during the past 30 days | Discrete quantitative |
+| SMQ020 | Whether the participant has smoked at least 100 cigarettes in their lifetime | Binary categorical |
+| SMD641 | Number of days the participant smoked a cigarette during the past 30 days | Discrete quantitative |
+
+## 3. Control Variables
+
+| Variable Name | Variable Description | Measurement Scale |
+|---|---|---|
+| RIDAGEYR | Age in years at screening; participants aged 80 years and older are top-coded at 80 | Discrete quantitative |
+| INDFMPIR | Ratio of family income to poverty | Continuous quantitative |
+| RIAGENDR | Gender of the participant | Nominal categorical |
+| RIDEXPRG | Pregnancy status for females aged 20–44 years at the time of the MEC examination | Nominal categorical |
+
+## 4. Exclusion Variables
+
+| Variable Name | Variable Description | Measurement Scale |
+|---|---|---|
+| BAXMSTAT | MRT exam status | Nominal categorical |
+| MCQ160A | Has a doctor or other health professional ever told the participant that they had arthritis? | Binary categorical |
+| MCQ160C | Has a doctor or other health professional ever told the participant that they had coronary heart disease? | Binary categorical |
+| MCQ160E | Has a doctor or other health professional ever told the participant that they had a heart attack (myocardial infarction)? | Binary categorical |
+| MCQ160F | Has a doctor or other health professional ever told the participant that they had a stroke? | Binary categorical |
+| MCQ160M | Has a doctor or other health professional ever told the participant that they had another thyroid problem? | Binary categorical |
+| DR1TKCAL | Energy (kcal) | Continuous quantitative |
+| DR1TSUGR | Total sugars (gm) | Continuous quantitative |
+| DR1TTFAT | Total fat (gm) | Continuous quantitative |
+| DR1TSODI | Sodium (mg) | Continuous quantitative |
+| DR1TFIBE | Dietary fiber (gm) | Continuous quantitative |
+
+## 5. Participant Identification and Survey Design Variables
+
+| Variable Name | Variable Description | Measurement Scale |
+|---|---|---|
+| SEQN | Respondent sequence number (unique participant identifier) | Identifier |
+| WTINT2YR | Full sample 2-year interview weight | Continuous quantitative |
+| WTMEC2YR | Full sample 2-year MEC examination weight | Continuous quantitative |
+| SDMVPSU | Masked variance unit pseudo-PSU variable for variance estimation | Nominal categorical |
+| SDMVSTRA | Masked variance unit pseudo-stratum variable for variance estimation | Nominal categorical |
 The final variable list will be refined after examining the NHANES documentation and the actual data files.
 
 ## 6. Roles of Variables in the Research Question
