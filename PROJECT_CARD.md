@@ -93,7 +93,7 @@ The variables are initially divided into four groups.
 
 2. Primary Explanatory Variables
 
-### Physical Activity
+Physical Activity
 
 | Variable Name | Variable Description | Measurement Scale |
 |---|---|---|
@@ -104,7 +104,7 @@ The variables are initially divided into four groups.
 | PAD810U | Unit of frequency for vigorous-intensity leisure-time physical activities | Nominal categorical |
 | PAD820 | Duration of vigorous-intensity leisure-time physical activities per session | Discrete quantitative |
 
-### Smoking
+Smoking
 
 | Variable Name | Variable Description | Measurement Scale |
 |---|---|---|
@@ -147,6 +147,8 @@ The variables are initially divided into four groups.
 | WTMEC2YR | Full sample 2-year MEC examination weight | Continuous quantitative |
 | SDMVPSU | Masked variance unit pseudo-PSU variable for variance estimation | Nominal categorical |
 | SDMVSTRA | Masked variance unit pseudo-stratum variable for variance estimation | Nominal categorical |
+
+
 The final variable list will be refined after examining the NHANES documentation and the actual data files.
 
 ## 6. Roles of Variables in the Research Question
