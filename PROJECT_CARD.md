@@ -74,7 +74,7 @@ The complex sampling design and appropriate survey weights will be considered du
 
 The variables are initially divided into four groups.
 
-## 1. Response Variables (Quantitative)
+1. Response Variables (Quantitative)
 
 | Variable Name | Variable Description | Measurement Scale |
 |---|---|---|
@@ -91,7 +91,7 @@ The variables are initially divided into four groups.
 | LBXTC | Total Cholesterol (mg/dL) | Continuous quantitative |
 | LBXTLG | Triglyceride (mg/dL) | Continuous quantitative |
 
-## 2. Primary Explanatory Variables
+2. Primary Explanatory Variables
 
 ### Physical Activity
 
@@ -113,7 +113,7 @@ The variables are initially divided into four groups.
 | SMQ020 | Whether the participant has smoked at least 100 cigarettes in their lifetime | Binary categorical |
 | SMD641 | Number of days the participant smoked a cigarette during the past 30 days | Discrete quantitative |
 
-## 3. Control Variables
+3. Control Variables
 
 | Variable Name | Variable Description | Measurement Scale |
 |---|---|---|
@@ -122,7 +122,7 @@ The variables are initially divided into four groups.
 | RIAGENDR | Gender of the participant | Nominal categorical |
 | RIDEXPRG | Pregnancy status for females aged 20–44 years at the time of the MEC examination | Nominal categorical |
 
-## 4. Exclusion Variables
+4. Exclusion Variables
 
 | Variable Name | Variable Description | Measurement Scale |
 |---|---|---|
@@ -138,7 +138,7 @@ The variables are initially divided into four groups.
 | DR1TSODI | Sodium (mg) | Continuous quantitative |
 | DR1TFIBE | Dietary fiber (gm) | Continuous quantitative |
 
-## 5. Participant Identification and Survey Design Variables
+5. Participant Identification and Survey Design Variables
 
 | Variable Name | Variable Description | Measurement Scale |
 |---|---|---|
