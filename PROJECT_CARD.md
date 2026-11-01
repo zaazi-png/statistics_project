@@ -41,6 +41,7 @@
 | SDMVSTRA | Masked variance unit pseudo-stratum variable for variance estimation | DEMO_L | Demographic Variables and Sample Weights | Demographics |
 | WTSAF2YR | Fasting Subsample 2 Year MEC Weight | GLU_L, TRIGLY_L | Plasma Fasting Glucose; Cholesterol - Low-Density Lipoproteins (LDL) & Triglycerides | Laboratory |
 | WTPH2YR | Phlebotomy 2 Year Weight | GHB_L, HDL_L, TCHOL_L | Glycohemoglobin; Cholesterol – High-Density Lipoprotein; Cholesterol - Total | Laboratory |
+
 The final selection of variables will depend on data availability, missing values, and their suitability for statistical analysis.
 
 ## 2.Project Title
