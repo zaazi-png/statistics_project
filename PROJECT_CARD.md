@@ -55,13 +55,11 @@ The final selection of variables will depend on data availability, missing value
 
 **Unit of Observation:**
 
-One individual NHANES participant.
-
-Each row in the final analytical dataset represents one participant.
+One individual NHANES participant.Each row in the final analytical dataset represents one participant.
 
 **Target Population:**
 
-Adults aged 20 years and older living in the United States during the NHANES 2021–2023 survey period.
+Adults aged 18 years, noninstitutionalized and older living in the United States during the NHANES 2021–2023 survey period.
 
 **Sampling Method:**
 
@@ -105,7 +103,7 @@ Physical Activity
 | PAD810U | Unit of frequency for vigorous-intensity leisure-time physical activities | Nominal categorical |
 | PAD820 | Duration of vigorous-intensity leisure-time physical activities per session | Discrete quantitative |
 
-Smoking
+Smoking Cigarette
 
 | Variable Name | Variable Description | Measurement Scale |
 |---|---|---|
@@ -148,22 +146,24 @@ Smoking
 | WTMEC2YR | Full sample 2-year MEC examination weight | Continuous quantitative |
 | SDMVPSU | Masked variance unit pseudo-PSU variable for variance estimation | Nominal categorical |
 | SDMVSTRA | Masked variance unit pseudo-stratum variable for variance estimation | Nominal categorical |
+WTPH2YR | Phlebotomy 2 Year Weight | Continuous quantitative
+WTSAF2YR | Fasting Subsample 2 Year MEC Weight | Continuous quantitative
 
-
-The final variable list will be refined after examining the NHANES documentation and the actual data files.
 
 ## 6. Roles of Variables in the Research Question
 
-| Role | Variables |
-|---|---|
-| Main explanatory variables | Physical activity and smoking status |
-| Primary response variable | BMI |
-| Additional response variables | Systolic blood pressure, diastolic blood pressure, and HDL cholesterol |
-| Control variables | Age and gender |
+This statistical project will investigate the associations between physical activity level and cigarette smoking status and several indicators of general health. The health outcomes to be examined will include body mass index (BMI), blood pressure, glycohemoglobin, fasting glucose, direct HDL-cholesterol, total cholesterol, and triglycerides. Each health outcome will be analyzed independently as a response variable.
 
-The roles of variables may change depending on the specific statistical question.
+Two primary explanatory variables will be considered:
 
-For example, BMI can be the response variable when examining its association with physical activity and smoking. Other health indicators can also be investigated separately.
+1. **Physical Activity Level:** Participants will be classified into four categories: Inactive, Low, Active, and Highly Active.
+2. **Cigarette Smoking Status:** Participants will be classified into four categories: Never Smoker, Former Smoker, Current Light Smoker, and Current Heavy Smoker.
+
+The associations between these explanatory variables and each health outcome will be examined separately. Age, gender, and the family income-to-poverty ratio will be considered as covariates to account for potential demographic and socioeconomic differences among participants.
+
+Pregnant participants will be excluded from the analyses to minimize potential pregnancy-related influences on the selected health outcomes.
+
+Furthermore, additional exclusion variables will be considered to assess the potential influence of other relevant factors on the analytical results. Appropriate exclusion criteria will be applied where necessary.
 
 ## 7. Type of Statistical Question
 
@@ -173,46 +173,24 @@ The project primarily investigates associations between physical activity, smoki
 
 Descriptive and comparative analyses will also be performed.
 
-The project does not aim to establish causal relationships.
-
 ## 8. Initial Hypothesis
 
-**Initial Scientific Hypothesis:**
+Based on previous research and preliminary expectations, physical activity is hypothesized to be positively associated with overall health, whereas cigarette smoking is expected to be negatively associated with overall health.
 
-Physical activity and smoking behavior may be associated with general health indicators.
+More specifically, higher levels of physical activity are expected to be associated with more favorable health outcomes, including lower BMI, lower blood pressure, lower glycohemoglobin, lower fasting glucose, higher HDL-cholesterol, and generally more favorable lipid profiles.
 
-Higher levels of physical activity may be associated with more favorable health indicators, while smoking may be associated with less favorable health indicators.
+Conversely, cigarette smoking is hypothesized to be associated with less favorable health outcomes, including higher blood pressure, higher glycohemoglobin, higher fasting glucose, lower HDL-cholesterol, and generally less favorable lipid profiles.
 
-Furthermore, the combination of physical activity and smoking behavior may reveal different patterns of association with general health.
-
-**Example Statistical Hypotheses:**
-
-For the association between physical activity and BMI:
-
-- H₀: There is no statistical association between physical activity and BMI.
-- H₁: There is a statistical association between physical activity and BMI.
-
-For the association between smoking status and HDL cholesterol:
-
-- H₀: There is no statistical difference in HDL cholesterol levels across smoking-status groups.
-- H₁: There is a statistical difference in HDL cholesterol levels across smoking-status groups.
-
-The exact hypotheses and statistical tests will be determined after finalizing the variables and their measurement scales.
+These hypotheses will be examined independently for each health outcome, while accounting for potential differences in age, gender, and family income-to-poverty ratio.
 
 ## 9. Initial Limitations
 
-The following limitations are anticipated:
+Several limitations and methodological challenges are anticipated in this project.
 
-1. **Cross-sectional data:** NHANES 2021–2023 does not establish temporal or causal relationships between physical activity, smoking, and health indicators.
+First, potential biological and physiological differences between male and female participants may influence the relationships between physical activity, cigarette smoking, and health outcomes. Although gender-specific analyses may provide additional insights, conducting separate analyses for each gender would substantially increase the complexity and computational workload of the study.
 
-2. **Self-reported measurements:** Physical activity and smoking information are primarily collected through questionnaires and may be affected by reporting errors.
+Second, physical activity and cigarette smoking data are primarily based on self-reported questionnaires. Consequently, these variables may be subject to recall bias, reporting inaccuracies, and potential misclassification, which could affect the reliability of the observed associations.
 
-3. **Missing data:** Some participants may have incomplete questionnaire responses or missing examination and laboratory measurements.
+Third, NHANES employs a complex sampling design involving sample weights, strata, and primary sampling units. Proper incorporation of these design features into statistical analyses is essential for obtaining population-representative estimates and valid statistical inferences. However, implementing survey-weighted analyses may introduce additional methodological and computational complexity.
 
-4. **Complex sampling design:** NHANES uses a complex sampling design, requiring appropriate consideration of survey weights, strata, and clusters.
-
-5. **Subgroup sample size:** Dividing participants into multiple physical activity and smoking categories may reduce the sample size in some groups.
-
-6. **Limited health indicators:** BMI, blood pressure, and HDL cholesterol represent only selected aspects of general health and cannot provide a complete assessment of an individual's health.
-
-7. **Potential confounding variables:** Other factors, such as age, gender, diet, and socioeconomic conditions, may influence the observed associations.
+Finally, since NHANES is an observational, cross-sectional study, establishing causal relationships between physical activity, cigarette smoking, and health outcomes will be challenging. Potential confounding factors, reverse causation, and the absence of clear temporal ordering may limit causal interpretation of the observed associations.
