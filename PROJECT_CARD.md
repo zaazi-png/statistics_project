@@ -23,14 +23,13 @@
 | LBXTLG | Triglyceride (mg/dL) | TRIGLY_L | Cholesterol - Low-Density Lipoproteins (LDL) & Triglycerides | Laboratory |
 | PAD790Q | How often does the participant engage in moderate-intensity leisure-time physical activities? | PAQ_L | Physical Activity | Questionnaire |
 | PAD790U | Unit of frequency for moderate-intensity leisure-time physical activities | PAQ_L | Physical Activity | Questionnaire |
-| PAD800 | Duration of moderate-intensity leisure-time physical activities per session | PAQ_L | Physical Activity | Questionnaire |
-| PAD810Q | How often does the participant engage in vigorous-intensity leisure-time physical activities? | PAQ_L | Physical Activity | Questionnaire |
+| PAD800 | Duration of moderate-intensity leisure-time physical activities per session | PAQ_L | Physical Activity | Questionnaire 
+| PAD810Q | How often does the participant engage in vigorous-intensity leisure-time physical activities? | PAQ_L | Physical Activity | Questionnaire | |
 | PAD810U | Unit of frequency for vigorous-intensity leisure-time physical activities | PAQ_L | Physical Activity | Questionnaire |
 | PAD820 | Duration of vigorous-intensity leisure-time physical activities per session | PAQ_L | Physical Activity | Questionnaire |
-| SMD630 | Age at which the participant first smoked a whole cigarette | SMQ_L | Smoking - Cigarette Use | Questionnaire |
 | SMD650 | Number of cigarettes smoked per day on smoking days during the past 30 days | SMQ_L | Smoking - Cigarette Use | Questionnaire |
 | SMQ020 | Whether the participant has smoked at least 100 cigarettes in their lifetime | SMQ_L | Smoking - Cigarette Use | Questionnaire |
-| SMD641 | Number of days the participant smoked a cigarette during the past 30 days | SMQ_L | Smoking - Cigarette Use | Questionnaire |
+| SMQ040 | {Do you/Does SP} now smoke cigarettes? | SMQ_L | Smoking - Cigarette Use | Questionnaire |
 | RIDAGEYR | Age in years at screening; participants aged 80 years and older are top-coded at 80 | DEMO_L | Demographic Variables and Sample Weights | Demographics |
 | INDFMPIR | Ratio of family income to poverty | DEMO_L | Demographic Variables and Sample Weights | Demographics |
 | RIAGENDR | Gender of the participant | DEMO_L | Demographic Variables and Sample Weights | Demographics |
